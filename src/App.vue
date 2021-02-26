@@ -1,5 +1,8 @@
 <template>
   <Header />
+  <div class="title">
+    <h1>Available Products</h1>
+  </div>
   <div class="row mt-3">
     <div class="col-md-8">
       <ProductList />
@@ -22,12 +25,12 @@ export default defineComponent({
 });
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style lang="scss">
+.title {
   text-align: center;
-  color: #2c3e50;
+  margin: 20px 0;
+  h1 {
+    color: $red;
+  }
 }
 </style>
