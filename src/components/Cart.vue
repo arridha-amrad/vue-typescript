@@ -47,7 +47,9 @@ export default defineComponent({
   name: "Cart",
   setup() {
     const store = useStore(key);
-    const carts = computed(() => store.state.carts);
+    const carts = computed(() => store.getters.carts);
+    // below also works
+    // const carts = computed(() => store.state.carts);
     const increaseAmount = (item: ICart) => {
       store.dispatch("increaseItem", item);
     };

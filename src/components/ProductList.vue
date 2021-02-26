@@ -22,7 +22,7 @@
 import { computed, defineComponent } from "vue";
 // import ProductList from "../mock/producs.json";
 import { useStore } from "vuex";
-import { ICart, IProduct } from "../interfaces/IProduct";
+import { IProduct } from "../interfaces/IProduct";
 import { key } from "../store";
 
 export default defineComponent({
